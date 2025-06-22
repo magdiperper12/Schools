@@ -121,24 +121,26 @@ const Menu = () => {
 			{itemMenu.map((menu) => (
 				<div
 					key={menu.title}
-					className='mb-6'>
-					<h2 className='text-gray-500 text-sm mb-2'>{menu.title}</h2>
-					<ul className='space-y-2'>
+					className='my-6 '>
+					<h2 className='text-gray-500 text-sm hidden lg:flex  mb-2'>
+						{menu.title}
+					</h2>
+					<ul className='space-y-4 lg:space-y-2'>
 						{menu.items.map(
 							(item) =>
 								item.visible.includes('admin') && (
 									<li key={item.label}>
 										<a
 											href={item.href}
-											className='flex items-center gap-2 text-gray-700 hover:text-lamaSky transition-colors'>
+											className='flex items-center justify-center lg:justify-start gap-2 text-gray-700 hover:text-lamaSky transition-colors'>
 											<Image
 												src={item.icon}
 												alt={item.label}
-												className='w-4 h-4'
+												className='w-5 h-5 lg:w-4 lg:h-4'
 												width={10}
 												height={10}
 											/>
-											<span>{item.label}</span>
+											<span className='hidden lg:flex'>{item.label}</span>
 										</a>
 									</li>
 								)

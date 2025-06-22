@@ -26,14 +26,16 @@ export default function RootLayout({
 					<div className='w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4'>
 						<Link
 							href='/'
-							className='flex items-center justify-center lg:justify-start gap-2'>
+							className='flex items-center justify-center lg:justify-start gap-2 mb-5'>
 							<Image
 								src='/logo.png'
 								alt='logo'
-								width={32}
-								height={32}
+								width={40}
+								height={40}
 							/>
-							<span className='hidden lg:block font-bold'>SchooLama</span>
+							<span className='hidden lg:block font-bold text-gray-600 '>
+								Perper School
+							</span>
 						</Link>
 						<Menu />
 					</div>

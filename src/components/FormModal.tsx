@@ -68,7 +68,7 @@ const FormModal = ({ table, type, data, id }: FormModalProps) => {
 				SelectedForm(type, data)
 			) : (
 				<p className='text-center text-red-500'>
-					No form available for "{table}"
+					No form available for {table}
 				</p>
 			);
 		}
